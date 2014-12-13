@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Presentation for my shiny App</title>
+  <meta name="description" content="">
+  <meta name="author" content="Joe Crozier">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>The Coast Guard Academy PFE</h2>
+  <p>Physical Fitness Exam (PFE) consisting of three parts:</p>
+
+<h3>1. Pushups</h3>
+
+<h3>2. Situps</h3>
+
+<h3>3. Run</h3>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h2>Recent Scoring Changes</h2>
+  <p>The PFE was revamped and we&#39;d like to examine what affect the new system had on scoring.</p>
+
+<h2><img src="line.png" alt="alt text"></h2>
+
+<h2>Observe other trends</h2>
+
+<p>-We think that scores dip between 4th Class and 3rd class year, but we don&#39;t know why.</p>
+
+<p>-With an interactive Shiny graph, we can examine different years or events to figure out why scores dip.</p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Example of the Shiny Graph</h2>
+  <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Anything else to put on that?</h2>
+  <p>Maybe split by Gender?</p>
+
+<p>I&#39;ll have Total and Pushups, but allow run or curlups?</p>
+
+<p>Anything else?</p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'solarized', 
+    transition: Reveal.getQueryHash().transition || 'cube', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <script src="shared/shiny.js" type="text/javascript"></script>
+<script src="shared/slider/js/jquery.slider.min.js"></script>
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
